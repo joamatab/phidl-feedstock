@@ -1,5 +1,5 @@
 {% set name = "phidl" %}
-{% set version = "1.4.2" %}
+{% set version = "1.6.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/phidl-{{ version }}.tar.gz
-  sha256: b2b1b9bd6d92fac6fc1028a69d410e220e712785e13ef6286a162c2a8976881f
+  sha256: 84b6daaea2c1d6bea6d1664696e6e27ba1fe3b4ed41115dac15b12db98964335
 
 build:
   number: 0
@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.7
   run:
     - gdspy >=1.5
     - matplotlib-base
     - numpy
-    - python >=2.7
+    - python >=3.7
     - six
 
 test:
